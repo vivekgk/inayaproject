@@ -30,87 +30,59 @@ function Forms() {
 //         }    setIsVisible(view);
 
 //       };
+
 const sendEmail = (e) => {
   e.preventDefault();
 
-  emailjs.sendForm('service_xmslikd', 'template_ceufy0e', form.current, 'YcGb6ihFrtSB_bT-Q')
+  emailjs.sendForm('service_jc49jd8', 'template_v0b0q8h', form.current, 'YcGb6ihFrtSB_bT-Q')
     .then((result) => {
-        console.log(result.text);
+      Object.keys(result).length > 1 ?<p>successfully submitted</p>  : <p>successfully submitted</p>
+        console.log("result",result.text);
+        console.log("response", result)
     }, (error) => {
         console.log(error.text);
     });
-    e.target.reset();
+    e.target.reset()
 };
-    return (
-        // <React.Fragment>
-        //     {/* <div className="col-md-7 contact_right"> */}
-        //     {isVisible && <div className='form-sec'>
-        //         {/* <div className="col-md-4 contact_right"> */}
-        //             <div style={{display:'flex',justifyContent:'space-between'}}>
-        //             <h3 style={{marginLeft:50}}>Enqury Details</h3>
-        //             <button type="button" class="close" aria-label="Close" onClick={() => setIsVisible(!isVisible)} style={{ color: "rgb(249, 75, 75)", fontSize: 40, cursor:"pointer",zIndex:999 }}>
-        //                 <span aria-hidden="true">&times;</span>
-        //             </button>
-        //             </div>
-        //             <form style={{width:"700px", padding:30,borderRadius:"20px"}}>
-        //                 <div className="text">
-        //                     <div className="text-fild">
-        //                         <span>Name:</span>
-        //                         <input type="text" className="text" defaultValue="Your Name here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name here';}" />
-        //                     </div>
-        //                     <div className="text-fild">
-        //                         <span>Email:</span>
-        //                         <input type="text" className="text" defaultValue="Your Email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}" />
-        //                     </div>
-        //                     <div className="clearfix"> </div>
-        //                 </div>
-        //                 <div className="msg-fild">
-        //                     <span>Subject:</span>
-        //                     <input type="text" className="text" defaultValue="Your Subject here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Subject here';}" />
-        //                 </div>
-        //                 <div className="message-fild">
-        //                     <span>Message:</span>
-        //                     <textarea defaultValue={" "} />
-        //                 </div>
-        //                <Button>Submit</Button>
-        //             </form>
-        //         </div>}
-        
 
-        //     {/* </div> */}
-        // </React.Fragment>
+
+    return (
+       
         <React.Fragment>
             {isVisible && <div className='color-overlay d-flex justify-content-center align-items-center'>
                <Form className='rounded p-4 p-sm-4' style={{position:"fixed"}} ref={form} onSubmit={sendEmail}>
                 <div style={{display:"flex", justifyContent:'space-between', color:"rgb(249, 75, 75)"}}>
-                <h5>Contact Details</h5>
+                <h5 style={{color:"royalblue"}}>Contact Details</h5>
                 <button type="button" class="close" aria-label="Close" onClick={() => setIsVisible(!isVisible)} style={{ color: "rgb(249, 75, 75)", fontSize: 40, cursor:"pointer",zIndex:999 }}>
                        <span aria-hidden="true">&times;</span>
                    </button>
                    </div>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control type="email" name="user_email" placeholder="Enter email" />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="text" placeholder="User Name" />
+        <Form.Control type="text" name="user_name" placeholder="User Name" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Please Type Any Message</Form.Label>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>PhoneNumber</Form.Label>
+        <Form.Control type="number" name="user_number" placeholder="User Number" />
+      </Form.Group>
+      <Form.Group className="mb-3" name="user_message" controlId="exampleForm.ControlTextarea1">
+        <Form.Label> Message</Form.Label>
         <Form.Control as="textarea" rows={3} />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
       <Button variant="success" type="submit">
         Submit
       </Button>
     </Form>
     </div>}
+
+
         </React.Fragment>
     );
 }

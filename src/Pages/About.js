@@ -1,100 +1,87 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import { MdHomeWork } from 'react-icons/md';
+
 
 const About = () => {
-    return (
-        <React.Fragment>
-   <div className="about_top">
-  <div className="container">
-    <div className="about">
-      <div className="col-md-8">
-        <h3 className="m_3">Our Profile</h3>
-        <div className="section_group"> 
-          <div className="col_1_of_2 span_1_of_2">
-            <img src="images/about.jpg" className="img-responsive" alt />
-          </div>
-          <div className="col_1_of_2 span_1_of_2">
-            <h4>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem tempor incididunt ut labore"</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </div>
-          <div className="clearfix"> </div>
-        </div>
-      </div>
-      <div className="col-md-4 about_box">
-        <h3 className="m_3">Careers</h3>
-        <h4>"But I must explain to you how all this mistaken idea of denouncing pleasure"</h4>
-        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain</p>
-      </div>
-      <div className="clearfix"> </div>
-    </div>
-    <div className="about_grid1">
-      <h3>Our Advantages</h3>
-      <div className="col-md-4">
-        <div className="list styled custom-list">
-          <ul>
-            <li><span className="dropcap">01 / </span>  
-              <div className="about_desc">
-                <h5><a href="#">The standard chunk of Lorem Ipsum used since the 1500s</a></h5>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="col-md-4">
-        <div className="list styled custom-list">
-          <ul>
-            <li><span className="dropcap">02 / </span>  
-              <div className="about_desc">
-                <h5><a href="#">The standard chunk of Lorem Ipsum used since the 1500s</a></h5>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="col-md-4">
-        <div className="list styled custom-list">
-          <ul>
-            <li><span className="dropcap">03 / </span>  
-              <div className="about_desc">
-                <h5><a href="#">The standard chunk of Lorem Ipsum used since the 1500s</a></h5>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="clearfix"> </div>
-    </div>
-    <div className="about_grid2">
-      <h3>Our Staff</h3>
-      <div className="col-md-3 about_box2">
-        <img src="images/a1.jpg" className="img-responsive" alt /> 
-        <h3>suffered </h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it</p>
-      </div>
-      <div className="col-md-3 about_box2">
-        <img src="images/a2.jpg" className="img-responsive" alt /> 
-        <h3>suffered </h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it</p>
-      </div>
-      <div className="col-md-3 about_box2">
-        <img src="images/a3.jpg" className="img-responsive" alt /> 
-        <h3>suffered </h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it</p>
-      </div>
-      <div className="col-md-3 about_box2">
-        <img src="images/a4.jpg" className="img-responsive" alt /> 
-        <h3>suffered </h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it</p>
-      </div>
-      <div className="clearfix"> </div>
-    </div>
-  </div></div>
+  return (
+    <React.Fragment>
+      <div className="about_top">
+        <div className="container">
+          <div className="about">
+            <h1 style={{ textAlign: "center", color: "rgb(74 12 123)", marginTop: 40 }}>Our Company</h1>
+            <div className="section_group">
+              <div className="col-md-8" >
+                <h3 className="m_3" style={{marginBottom:20}}>Our Profile</h3>
+                <p style={{ color: "rgb(74 12 123)" }}>
+                  “Home is where love resides, memories are created, friends always belong, and laughter never ends.”</p>
+                <p style={{ width: "80%" }}>Owning a home is a dream for many but only a few achieve that dream, as buying a home is a very strenuous process many give up even before starting or face bad experience while hunting for a home. Fret no more because CPS is here.</p>
+                <p style={{ width: "80%" }}>Chennai Property Service was founded to make everyman’s dream of owning a home come true. As your realtor, we will work with you seamlessly to find the perfect property for you in your budget.</p>
+                <p style={{ width: "80%" }}>Our sponsor Quadrant Homes, Inc. is a pioneer in constructing world-class luxury apartments, condos and retirement homes. CPS partnered with them have become a dominant player in the real estate market</p>
+                <p style={{ width: "80%", fontSize: "15px" }}>Over the years, we have gained a reputation as a trust-worthy realtor due to our integrated service to our diverse range of customers. Our service includes real estate, mortgage and title services. We will standby you from the beginning to the end to facilitate the purchase.</p>
 
-        </React.Fragment>
-    );
+                <div className="clearfix"> </div>
+              </div>
+            </div>
+            <div className="col-md-4 about_box">
+              <img src="images/AboutImage.jpg" alt style={{ width: "400px", height: "400px" }} />
+
+            </div>
+
+            <div className="clearfix"> </div>
+          </div>
+          <div className="about_grid1">
+            <h1 style={{ textAlign: "center", color: "rgb(74 12 123)" }}>Our Advantages</h1>
+            <div className="col-md-6">
+              <div >
+                <div className="about_split">
+                  <MdHomeWork size="60px" color="#87d54d"  />
+                  <h3 >Dedicated Property Consultant</h3>
+                  <p>Quick and responsive are two of the words which would describe our service. We want our customers to feel at ease while working with us by giving our undivided attention to all our client’ needs. Never cease until our customer’s real estate needs are fulfilled is our motto.
+                  </p>
+                </div>
+              </div>
+            </div> 
+            <div className="col-md-6">
+              <div >
+                <div className="about_split">
+                  <MdHomeWork size="60px" color="#87d54d" />
+                  <h3 >Dedicated Property Consultant</h3>
+                  <p>Quick and responsive are two of the words which would describe our service. We want our customers to feel at ease while working with us by giving our undivided attention to all our client’ needs. Never cease until our customer’s real estate needs are fulfilled is our motto.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div>
+                <div className="about_split">
+                  <MdHomeWork size="60px" color="#87d54d" />
+                  <h3>Dedicated Property Consultant</h3>
+                  <p>Quick and responsive are two of the words which would describe our service. We want our customers to feel at ease while working with us by giving our undivided attention to all our client’ needs. Never cease until our customer’s real estate needs are fulfilled is our motto.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div>
+                <div className="about_split">
+                  <MdHomeWork size="60px" color="#87d54d" />
+                  <h3 >Dedicated Property Consultant</h3>
+                  <p>Quick and responsive are two of the words which would describe our service. We want our customers to feel at ease while working with us by giving our undivided attention to all our client’ needs. Never cease until our customer’s real estate needs are fulfilled is our motto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="clearfix"> </div>
+          </div>
+
+        </div></div>
+
+    </React.Fragment>
+  );
 }
 
 export default About;
