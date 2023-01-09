@@ -21,16 +21,16 @@ const Contact = () => {
         <div className="col-md-4 contact_left">
           <h3>Contact info</h3>
           <div className='foot_contact'>
-            <HiLocationMarker  size="20px" />
+            <HiLocationMarker  size="20px"  color="#ff8a00"/>
             <p>Address: No.30 Anna Nagar plaza Near<br /> Ayyappan Temple
               Chennai, Tamil Nadu 600040</p>
               </div>
               <div className='foot_contact'>
-              <BsTelephoneOutboundFill  size="20px"/>
+              <BsTelephoneOutboundFill  size="20px" color="#ff8a00"/>
               <p>Phone: +91 - 96000 51444</p>
               </div>
               <div className='foot_contact'>
-               <MdAttachEmail size="20px" />
+               <MdAttachEmail size="20px" color="#ff8a00"/>
                <p>Sales@Inayapropertyservices.com</p>
                </div>
         </div>
