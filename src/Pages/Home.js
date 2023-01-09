@@ -3,9 +3,13 @@ import SalesHome from './SalesHome';
 import Forms from '../components/Forms';
 
 const Home = () => {
+   
     return (
             <React.Fragment>
-              <Forms />
+            {
+            !localStorage.getItem('mail') && 
+            <Forms />
+            }
   <div className="slider">
     <div className="callbacks_container">
       <ul className="rslides" id="slider">

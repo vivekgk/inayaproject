@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 function Forms() {
     const [isVisible, setIsVisible] = useState(true);
     const form = useRef();
-
+    localStorage.setItem('mail','hi')
 //     useEffect(() => {   
 //         window.addEventListener("scroll", listenToScroll);
 //         return () => 
