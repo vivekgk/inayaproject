@@ -2,43 +2,32 @@ import React, { useState,useEffect,useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
+import {TbArrowsCross} from 'react-icons/tb';
+import swal from 'sweetalert';
+
 
 
 function Forms() {
     const [isVisible, setIsVisible] = useState(true);
+
     const form = useRef();
-    localStorage.setItem('mail','hi')
-//     useEffect(() => {   
-//         window.addEventListener("scroll", listenToScroll);
-//         return () => 
-//            window.removeEventListener("scroll", listenToScroll); 
-//       }, []);
-// useEffect(()=>{
-// console.log("enter",isVisible)
-
-// },[isVisible])
-//       const listenToScroll = () => {
-//         let heightToHideFrom = 300;
-//         const winScroll = document.body.scrollTop || 
-//             document.documentElement.scrollTop;
-//       //  setHeight(winScroll);
-//         let view;
-//         if (winScroll > heightToHideFrom) {  
-//             view= true;
-//         } else {
-//            view= false;
-//         }    setIsVisible(view);
-
-//       };
+  
 
 const sendEmail = (e) => {
   e.preventDefault();
 
-  emailjs.sendForm('service_jc49jd8', 'template_v0b0q8h', form.current, 'YcGb6ihFrtSB_bT-Q')
+  emailjs.sendForm('service_ek023lp', 'template_v0b0q8h', form.current, 'NnWj2OW4wrQrYvDe1')
     .then((result) => {
-      Object.keys(result).length > 1 ?<p>successfully submitted</p>  : <p>successfully submitted</p>
         console.log("result",result.text);
         console.log("response", result)
+        if(result){
+          swal({
+            title: "form successfully submitted!",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "Close!",
+          });
+        }
     }, (error) => {
         console.log(error.text);
     });
@@ -49,13 +38,12 @@ const sendEmail = (e) => {
     return (
        
         <React.Fragment>
-            {isVisible && <div className='color-overlay d-flex justify-content-center align-items-center'>
-               <Form className='rounded p-4 p-sm-4' style={{position:"fixed"}} ref={form} onSubmit={sendEmail}>
+            {/* {isVisible &&  */}
+            <div className='color-overlay d-flex justify-content-center align-items-center'>
+               <Form className='rounded p-4 p-sm-4' id="isVisible" style={{display:"none",position:"fixed", backgroundColor:"#6f42c1", color:"#FFFF", top:"100px"}} ref={form} onSubmit={sendEmail}>
                 <div style={{display:"flex", justifyContent:'space-between', color:"rgb(249, 75, 75)"}}>
-                <h5 style={{color:"royalblue"}}>Contact Details</h5>
-                <button type="button" class="close" aria-label="Close" onClick={() => setIsVisible(!isVisible)} style={{ color: "rgb(249, 75, 75)", fontSize: 40, cursor:"pointer",zIndex:999 }}>
-                       <span aria-hidden="true">&times;</span>
-                   </button>
+                <h4 style={{color:"#FFFF"}}>Contact Details</h4>
+                   <TbArrowsCross  size="30px" style={{cursor:"pointer"}} onClick={() => {document.getElementById('isVisible').style.display='none'}}/>
                    </div>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -66,21 +54,22 @@ const sendEmail = (e) => {
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="text" name="user_name" placeholder="User Name" />
+        <Form.Control type="text" name="user_name" placeholder="Enter name" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Group className="mb-3" controlId="formBasicNumber">
         <Form.Label>PhoneNumber</Form.Label>
-        <Form.Control type="number" name="user_number" placeholder="User Number" />
+        <Form.Control type="number" name="user_number" placeholder="Enter number" />
       </Form.Group>
-      <Form.Group className="mb-3" name="user_message" controlId="exampleForm.ControlTextarea1">
+      <Form.Group className="mb-3"  controlId="exampleForm.ControlTextarea1">
         <Form.Label> Message</Form.Label>
-        <Form.Control as="textarea" rows={3} />
+        <Form.Control as="textarea" rows={3}  name="message"/>
       </Form.Group>
       <Button variant="success" type="submit">
         Submit
       </Button>
     </Form>
-    </div>}
+    </div>
+    {/* } */}
 
 
         </React.Fragment>

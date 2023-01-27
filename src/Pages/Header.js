@@ -1,14 +1,19 @@
 import React from 'react';
 import {NavLink} from "react-router-dom"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container';
 const Header = () => {
+ 
  
     return (
         <React.Fragment>
-  <div className="header">
+  {/* <div className="header">
   <div className="col-xs-4">
     <div className="logo">
-      <a href="index.html"><img src="images/Logo100.svg"  className="main_logo"alt /></a>
+    <img src="images/Logo100.svg"  className="main_logo"alt />
     </div>
   </div>
   <div className="col-xs-8 header_right">
@@ -25,7 +30,23 @@ const Header = () => {
 
   </div>
   <div className="clearfix"> </div>
-</div>
+</div> */}
+      <Navbar bg="light" expand="md" fixed="top" >
+      <Container>
+        <Navbar.Brand > <img src="images/Logo100.svg"  className="main_logo"alt /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav  className="ms-auto">
+            <Nav.Link href="/" ><i className="fa fa-home"> </i>Home</Nav.Link>
+            <Nav.Link href="/about"><i className="fa fa-star"> </i>About</Nav.Link>
+            <Nav.Link href="/service"><i className="fa fa-thumbs-up"> </i>Services</Nav.Link>
+            <Nav.Link href="/contact"><i className="fa fa-envelope-o"> </i>Contact</Nav.Link> 
+            
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+      <div className="clearfix"> </div>
+    </Navbar>
 
         </React.Fragment>
     );

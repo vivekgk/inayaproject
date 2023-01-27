@@ -6,6 +6,10 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsTelephoneOutboundFill } from 'react-icons/bs';
 import { MdAttachEmail } from 'react-icons/md';
+import{AiFillHome} from 'react-icons/ai';
+import{MdOutlineStarRate} from'react-icons/md'
+import{BsHandThumbsUpFill} from'react-icons/bs'
+import {MdEmail} from "react-icons/md"
 
 const Footer = () => {
   return (
@@ -13,8 +17,9 @@ const Footer = () => {
    <div className="footer_top">
   <div className='foot-container'>
     <div className="about">
-      <div className="service_grid" >
-          <div className="col-md-6 col-sm-12">
+      <div className='container'>
+      <div className="row">
+          <div className="col-md-4 col-sm-12">
             <h3 className='foot_head'>Get In Touch</h3>
             <div className='foot_contact'>
             <HiLocationMarker  size="20px" color="#ff8a00" />
@@ -30,7 +35,7 @@ const Footer = () => {
                <p>Sales@Inayapropertyservices.com</p>
                </div>
           </div>
-          <div className="col-md-6 col-sm-12" >
+          <div className="col-md-4 col-sm-12" >
             <h3 className='foot_head'>Social Links</h3>
             <div style={{display:"flex", marginTop:20}}>
             <div className='icons'>
@@ -47,6 +52,25 @@ const Footer = () => {
             </div>
           </div>
           </div>
+
+          <div className="col-md-4 col-sm-12"  >
+            <h3 className='foot_head'>Our Links</h3>
+            <div style={{display:"flex", marginTop:20}}>
+            <div className='icons'>
+            <AiFillHome size="30px" color="#ff8a00" />
+            </div>
+            <div className='icons'>
+            <MdOutlineStarRate size="30px" color="#ff8a00" />
+            </div>
+            <div className='icons'>
+            <BsHandThumbsUpFill size="30px"  color="#ff8a00"/>
+            </div>
+            <div className='icons'>
+            <MdEmail size="30px" color="#ff8a00" />
+            </div>
+          </div>
+          </div>
+        </div>
         </div>
         <div className="clearfix"> </div>
         </div>
