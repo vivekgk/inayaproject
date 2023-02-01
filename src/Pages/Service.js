@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Popup from '../components/Popup';
 
 const Service = () => {
   return (
@@ -131,6 +131,7 @@ const Service = () => {
                 <div style={{display:"flex",justifyContent:"space-between"}}>
                 <button type="button" class="btn btn-danger">underconstruction</button>
                 <button type="button" class="btn btn-warning">viewMore</button>
+                {/* <Popup /> */}
                 </div>
               </div>
             </div>

@@ -1,10 +1,28 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import { Link } from "react-router-dom"
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsTelephoneOutboundFill } from 'react-icons/bs';
 import { MdAttachEmail } from 'react-icons/md';
+import emailjs from '@emailjs/browser';
+
+
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_jaq3dlh', 'template_b9a3vcu', form.current, 'NnWj2OW4wrQrYvDe1')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
+
     return (
  <React.Fragment>
  <div className="about_top">
@@ -36,28 +54,29 @@ const Contact = () => {
         </div>
         <div className="col-md-8 contact_right">
           <h3>Catch me</h3>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="text">
               <div className="text-fild">
                 <span>Name:</span>
-                <input type="text" className="text" defaultValue="Your Name here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name here';}" />
+                <input type="text" className="text" name="name" defaultValue="Your Name here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name here';}" />
               </div>
               <div className="text-fild">
                 <span>Email:</span>
-                <input type="text" className="text" defaultValue="Your Email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}" />
+                <input type="text" className="text" name="email" defaultValue="Your Email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}" />
               </div>
               <div className="clearfix"> </div>
             </div>
             <div className="msg-fild">
               <span>Subject:</span>
-              <input type="text" className="text" defaultValue="Your Subject here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Subject here';}" />
+              <input type="text" className="text" name="subject" defaultValue="Your Subject here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Subject here';}" />
             </div>
             <div className="message-fild">
               <span>Message:</span>
-              <textarea defaultValue={" "} />
+              <textarea defaultValue={" "}  name="message"/>
             </div>
-            <label className="btn1 btn-8 btn-8c"><input type="submit" defaultValue="Send" /></label>
+           <button className='contact-btn'>Send</button>
           </form>
+              
         </div>
         <div className="clearfix"> </div>
       </div>

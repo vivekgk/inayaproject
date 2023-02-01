@@ -1,9 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Link } from "react-router-dom"
 import { MdHomeWork } from 'react-icons/md';
 
 
 const About = () => {
+  useEffect(()=>{
+    setTimeout(()=>{
+      document.getElementById('isVisible').style.display='none'
+    },500)
+    
+  },[])
   return (
     // <React.Fragment>
     //   <div className="about_top">

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Service from "./Pages/Service";
@@ -10,6 +10,12 @@ import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 
 
 function App() {
+  useEffect(()=>{
+    setTimeout(()=>{
+      document.getElementById('isVisible').style.display='block'
+    },500)
+    
+  },[])
   return (
     <React.Fragment>
           <Router>
