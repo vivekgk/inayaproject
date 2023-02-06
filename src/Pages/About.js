@@ -100,7 +100,7 @@ const About = () => {
               <h1 style={{ color:"#ff8a00"}}>About Us</h1>
               <p><b style={{color: 'rgb(74 12 123)'}}>“Home is where love resides, memories are created, friends always belong, and laughter never ends.”</b></p>  
               <p>Owning a home is a dream for many but only a few achieve that dream, as buying a home is a very strenuous process many give up even before starting or face bad experience while hunting for a home. Fret no more because CPS is here.</p>
-              <p>Chennai Property Service was founded to make everyman’s dream of owning a home come true. As your realtor, we will work with you seamlessly to find the perfect property for you in your budget.</p>
+              <p>Inaya Property Service was founded to make everyman’s dream of owning a home come true. As your realtor, we will work with you seamlessly to find the perfect property for you in your budget.</p>
               <p>Our sponsor Quadrant Homes, Inc. is a pioneer in constructing world-class luxury apartments, condos and retirement homes. CPS partnered with them have become a dominant player in the real estate market.</p>
               <p>Over the years, we have gained a reputation as a trust-worthy realtor due to our integrated service to our diverse range of customers. Our service includes real estate, mortgage and title services. We will standby you from the beginning to the end to facilitate the purchase.</p>
             </div>
