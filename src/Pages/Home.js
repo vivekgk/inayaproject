@@ -216,18 +216,18 @@ const Home = () => {
       <h4 className="m_3">Most Popular</h4>
       <div className="grid_1">
         <div className="col-md-3 box_1">
-          <a href="single.html"><img src="images/Impressions_optimized.jpg" className="img-responsive" alt /></a>
+          <a href="single.html"><img src="images/vgn_fairmont_1.jpg" className="img-responsive" alt  style={{height:"8rem" }}/></a>
           <div className="box_2">
             <div className="special-wrap">
-              <div className="hot_offer"><span className="m_11">Hot Offer</span></div>
+              {/* <div className="hot_offer"><span className="m_11">Hot Offer</span></div> */}
               <div className="forclosure"><span className="m_12">Special Offer</span></div>
             </div>
           </div>
           <div className="box_3">
             <h3><a href="single.html">VGN FAIRMOUNT - GUNIDY</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Garage</strong><i className="fa fa-plane icon1"> </i>
-                2</span>
+              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+                Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
               <span className="bedrooms last"><strong>Beds</strong><i className="fa fa-bed" />
@@ -236,18 +236,18 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-3 box_1">
-          <a href="single.html"><img src="images/eterna2_1_optimized.jpg" className="img-responsive" alt /></a>
+          <a href="single.html"><img src="images/eterna2_1_optimized.jpg" className="img-responsive" alt style={{height:"8rem" }} /></a>
           <div className="box_2">
             <div className="special-wrap">
-              <div className="hot_offer"><span className="m_11">Hot Offer</span></div>
+              {/* <div className="hot_offer"><span className="m_11">Hot Offer</span></div> */}
               <div className="forclosure"><span className="m_12">Special Offer</span></div>
             </div>
           </div>
           <div className="box_3">
             <h3><a href="single.html">ETERNA - KARAPAKKAM</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Garage</strong><i className="fa fa-plane icon1"> </i>
-                2</span>
+              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+                Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
               <span className="bedrooms last"><strong>Beds</strong><i className="fa fa-building-o icon1"> </i>
@@ -256,18 +256,18 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-3 box_1">
-          <a href="single.html"><img src="images/Impressions_optimized.jpg" className="img-responsive" alt /></a>
+          <a href="single.html"><img src="images/Impressions_optimized.jpg" className="img-responsive" alt style={{height:"8rem" }} /></a>
           <div className="box_2">
             <div className="special-wrap">
-              <div className="hot_offer"><span className="m_11">Hot Offer</span></div>
+              {/* <div className="hot_offer"><span className="m_11">Hot Offer</span></div> */}
               <div className="forclosure"><span className="m_12">Special Offer</span></div>
             </div>
           </div>
           <div className="box_3">
             <h3><a href="single.html">KG Impression</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Garage</strong><i className="fa fa-plane icon1"> </i>
-                2</span>
+              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+                Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
               <span className="bedrooms last"><strong>Beds</strong><i className="fa fa-building-o icon1"> </i>
@@ -276,18 +276,18 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-3 box_1">
-          <a href="single.html"><img src="images/eterna2_1_optimized.jpg" className="img-responsive" alt /></a>
+          <a href="single.html"><img src="images/doshi3.jpg" className="img-responsive" alt style={{height:"8rem" }} /></a>
           <div className="box_2">
             <div className="special-wrap">
-              <div className="hot_offer"><span className="m_11">Hot Offer</span></div>
+              {/* <div className="hot_offer"><span className="m_11">Hot Offer</span></div> */}
               <div className="forclosure"><span className="m_12">Special Offer</span></div>
             </div>
           </div>
           <div className="box_3">
             <h3><a href="single.html">Doshi</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Garage</strong><i className="fa fa-plane icon1"> </i>
-                2</span>
+              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+                Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
               <span className="bedrooms last"><strong>Beds</strong><i className="fa fa-building-o icon1"> </i>

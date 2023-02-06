@@ -23,8 +23,8 @@ const Footer = () => {
             <h3 className='foot_head'>Get In Touch</h3>
             <div className='foot_contact'>
             <HiLocationMarker  size="20px" color="#ff8a00" />
-            <p>Address: No.30 Anna Nagar plaza Near<br /> Ayyappan Temple
-              Chennai, Tamil Nadu 600040</p>
+            <p>Address: 21, 11, Bawa Rd, Sriram Colony<br /> Abiramapuram
+            Chennai, Tamil Nadu 600018</p>
               </div>
               <div className='foot_contact'>
               <BsTelephoneOutboundFill  size="20px" color="#ff8a00" />

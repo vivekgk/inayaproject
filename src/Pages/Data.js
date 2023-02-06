@@ -5,7 +5,7 @@ const Menu=[
         category:"Chennai",
         type:"VGN FAIRMOUNT",
         bed:"BHK: 2 & 3",
-        Place:"GUNIDY"
+        Place:"GUNIDY, Chennai"
     },
     {
         id:2,
@@ -13,26 +13,34 @@ const Menu=[
         category:"Chennai",
         type:"ETERNA",
         bed:"BHK: 2 & 3",
-        Place:"KARAPAKKAM"
+        Place:"KARAPAKKAM, Chennai"
     },
     {
         id:3,
-        images:"images/impression0.jpg",
+        images:"images/Impressions_optimized.jpg",
         category:"Chennai",
         type:"KG Impression",
         bed:"BHK: 2 & 3",
-        Place:"Thoraipakkam"
+        Place:"Thoraipakkam, Chennai"
     },
     {
         id:4,
         images:"images/doshi3.jpg",
         category:"Chennai",
-        type:"Doshi",
+        type:"Doshi - Risington",
         bed:"BHK: 2 & 3",
-        Place:"Chennai"
+        Place:"Karapakkam, Chennai"
     },
     {
         id:5,
+        images:"images/tudor0.jpg",
+        category:"Chennai",
+        type:"Casagrand - Tudor",
+        bed:"BHK: 2 & 4",
+        Place:"Mogappair, Chennai"
+    },
+    {
+        id:6,
         images:"images/crescendo.jpg",
         category:"Chennai",
         type:"Caresendo",
@@ -40,44 +48,44 @@ const Menu=[
         Place:"Chennai"
     },
     {
-        id:6,
-        images:"images/s7.jpg",
-        category:"Chennai",
-        type:"Radiance Jade Garden Phase II",
-        bed:"BHK: 2 & 4",
-        Place:"Neelangarai"
-    },
-    {
         id:7,
-        images:"images/s8.jpg",
-        category:"Bangalore",
-        type:"Radiance Jade Garden Phase II",
+        images:"images/athens2.jpg",
+        category:"Chennai",
+        type:"Casagrand - Athens",
         bed:"BHK: 1 & 2",
-        Place:"pallikaranai"
+        Place:"Ambattur, Chennai"
     },
     {
         id:8,
-        images:"images/s9.jpg",
-        category:"Bangalore",
-        type:"Radiance Blossom",
+        images:"images/Casagrand_Flagship_1.jpg",
+        category:"Chennai",
+        type:"Casagrand - Flagship",
         bed:"BHK: 1 & 2",
-        Place:"Mahapalipuram"
+        Place:"Pallikaranai, Chennai"
     },
     {
         id:9,
-        images:"images/s10.jpg",
-        category:"Bangalore",
-        type:"Radiance Blossom",
+        images:"images/Alliance.jpeg",
+        category:"Chennai",
+        type:"Alliance - New Porur",
         bed:"BHK: 2 & 3",
-        Place:"Solinganallore"
+        Place:"Thirumazhisai, Chennai"
     },
+    // {
+    //     id:10,
+    //     images:"images/s11.jpg",
+    //     category:"Bangalore",
+    //     type:"Radiance The Pride",
+    //     bed:"BHK: 2 & 3",
+    //     Place:"Thambaram"
+    // },
     {
         id:10,
-        images:"images/s11.jpg",
-        category:"Andhra",
-        type:"Radiance The Pride",
+        images:"images/Ashraya.jpeg",
+        category:"Chennai",
+        type:"Altis - Ashraya",
         bed:"BHK: 2 & 3",
-        Place:"Thambaram"
+        Place:"Maangadu, Chennai"
     },
     {
         id:11,
@@ -87,6 +95,15 @@ const Menu=[
         bed:"BHK: 2 & 3",
         Place:"Guindy"
     },
+    {
+        id:12,
+        images:"images/tudor0.jpg",
+        category:"Bangalore",
+        type:"Radiance The Pride",
+        bed:"BHK: 2 & 3",
+        Place:"Maangadu"
+    },
+
 
 ]
     
