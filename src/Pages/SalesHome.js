@@ -38,7 +38,7 @@ const SalesHome = () => {
                                 return (  
                                     <div className='col-md-3 col-lg-4 col-sm-12 '>
                                     <div className="card" style={{width:"20rem", border:"3px solid #00000014", marginTop:15 }}>
-                                      <img src={images} className="card-img-top" alt="..." />
+                                      <img src={images} className="card-img-top" alt="..." style={{height:"10rem" }}/>
                                       <div className="card-body">
                                         <h5 className="card-title">{type}</h5>
                                         <p className="card-text">{bed}</p>
