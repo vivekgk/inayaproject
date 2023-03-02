@@ -4,12 +4,21 @@ import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
 import {TbArrowsCross} from 'react-icons/tb';
 import swal from 'sweetalert';
-
+import Modal from 'react-bootstrap/Modal';
 
 
 function Forms() {
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
 
+
+    
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 1000);
+      // clear timer if the component unmount
+      return () => clearTimeout(timer);
+    }, []);
     const form = useRef();
   
 
@@ -38,8 +47,7 @@ const sendEmail = (e) => {
     return (
        
         <React.Fragment>
-            {/* {isVisible &&  */}
-            <div className='color-overlay d-flex justify-content-center align-items-center'>
+             <div className='color-overlay d-flex justify-content-center align-items-center'>
                <Form className='rounded p-4 p-sm-4' id="isVisible" style={{display:"none",position:"fixed", backgroundColor:"#6f42c1", color:"#FFFF", top:"100px"}} ref={form} onSubmit={sendEmail}>
                 <div style={{display:"flex", justifyContent:'space-between', color:"rgb(249, 75, 75)"}}>
                 <h4 style={{color:"#FFFF"}}>Contact Details</h4>
@@ -68,10 +76,7 @@ const sendEmail = (e) => {
         Submit
       </Button>
     </Form>
-    </div>
-    {/* } */}
-
-
+    </div>  
         </React.Fragment>
     );
 }

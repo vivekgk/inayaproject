@@ -31,8 +31,8 @@ const Header = () => {
   </div>
   <div className="clearfix"> </div>
 </div> */}
-      <Navbar bg="light" expand="md" fixed="top" >
-      <Container>
+      <Navbar bg="light" expand="md" fixed="top" style={{display:"flex", justifyContent:"flex-end"}} >
+      <Container style={{display:"flex", justifyContent:"flex-end"}}>
         <Navbar.Brand > <img src="images/Logo100.svg"  className="main_logo"alt /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -442,6 +442,29 @@ ul.callbacks_tabs.callbacks1_tabs {
 	}
 }
 @media(max-width:480px){
+
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+  }
+
 	.caption {
 		width: 70%;
 		top: 14%;
@@ -1001,6 +1024,7 @@ ul.list_1{
 }
 .icons{
   margin-right: 30px;
+  cursor: pointer;
 
 }
 .foot_contact{

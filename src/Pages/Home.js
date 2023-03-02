@@ -1,17 +1,20 @@
 import React,{useEffect} from 'react';
 import SalesHome from './SalesHome';
 import Forms from '../components/Forms';
-
+import { FaCar } from 'react-icons/fa';
+import Popup from '../components/Popup';
 const Home = () => {
   // useEffect(()=>{
   //   document.getElementById('isVisible').style.display='block'
   // },[])   
     return (
             <React.Fragment>
-               {/* {
-            !localStorage.getItem('mail') &&  */}
-            {/* <Forms /> */}
-            {/* } */}
+               
+            {
+    !localStorage.getItem('mail') &&  
+    <Forms />
+            } 
+           
             
   <div className="slider">
     <div className="callbacks_container">
@@ -169,6 +172,14 @@ const Home = () => {
       </ul>
     </div>
   </div>
+
+  {/* <div className='slider1'>
+  <img src="images/banner.jpg" className="img-responsive" alt />
+  <div className="container">
+              <h1>FIND YOUR DREAM HOME AT LOW PRICE.</h1>
+              <h2>At wisi enim ad minim veniam, quis nostrud.</h2>
+            </div>
+  </div> */}
   <div className="smart_details">
     <div className="container">
       <div className="col-md-10 dropdown-buttons">
@@ -226,11 +237,11 @@ const Home = () => {
           <div className="box_3">
             <h3><a href="single.html">VGN FAIRMOUNT - GUNIDY</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+              <span className="area first"><strong>Parking</strong>  <FaCar size="16px" color="#999" />
                 Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
-              <span className="bedrooms last"><strong>Beds</strong><i className="fa fa-bed" />
+                <span className="bedrooms last"><strong>Beds</strong><i className="fa fa-building-o icon1"> </i>
                 2</span>
             </div>
           </div>
@@ -246,7 +257,7 @@ const Home = () => {
           <div className="box_3">
             <h3><a href="single.html">ETERNA - KARAPAKKAM</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+            <span className="area first"><strong>Parking</strong>  <FaCar size="16px" color="#999" />
                 Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
@@ -266,7 +277,7 @@ const Home = () => {
           <div className="box_3">
             <h3><a href="single.html">KG Impression</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+            <span className="area first"><strong>Parking</strong>  <FaCar size="16px" color="#999" />
                 Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
@@ -286,7 +297,7 @@ const Home = () => {
           <div className="box_3">
             <h3><a href="single.html">Doshi</a></h3>
             <div className="boxed_mini_details clearfix">
-              <span className="area first"><strong>Parking</strong><i className="fa fa-plane icon1"> </i>
+            <span className="area first"><strong>Parking</strong>  <FaCar size="16px" color="#999" />
                 Yes</span>
               <span className="status"><strong>Baths</strong><i className="fa fa-retweet icon1"> </i>
                 2</span>
